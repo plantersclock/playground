@@ -1,3 +1,5 @@
+import sqlite3
+
 from django.shortcuts import render
 from django.http import HttpResponse
 from django.template import loader
@@ -5,9 +7,12 @@ from django.http import Http404
 from django.views import generic
 from django.http import HttpResponseRedirect
 from django.http import HttpRequest
+from django.db.models import Count
+from collections import Counter
 
 
 from .forms import FavoriteGameForm
+from .models import BGGUser, BGGGame, UserGameRanking
 
 
 # Create your views here.
@@ -24,10 +29,18 @@ def get_favorite_game_name(request):
         # check whether it's valid:
         if form.is_valid():
             favgamename = form.cleaned_data['favorite_game_name']
+            favgameuserlist = []
+            favgameuserlist = UserGameRanking.objects.filter(game_name__name = favgamename)
+            favgameuserlist = [p.user_name.name for p in favgameuserlist]
+            otherfavgames = [x.game_name.name for x in UserGameRanking.objects.all() if x.user_name.name in favgameuserlist]
+            otherfavgames = (Counter(otherfavgames)).most_common()[1:11]
+            otherfavgames = (str(item[0]) + ': ' + str(item[1]) for item in otherfavgames)
+                 
+            
             # process the data in form.cleaned_data as required
             # ...
             # redirect to a new URL:
-            return render(request, 'relatedgamesearch/favoritegame.html', {'form': form, 'favgamename': favgamename})
+            return render(request, 'relatedgamesearch/favoritegame.html', {'form': form, 'favgamename': otherfavgames})
 
     # if a GET (or any other method) we'll create a blank form
     else:
