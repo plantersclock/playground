@@ -1,0 +1,2682 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+   <head>
+		<!--[if lte IE 8]>
+		<script src="/js/json2.min.js"></script>
+		<![endif]-->
+
+		
+
+	<meta property="og:image" content="https://cf.geekdo-static.com/images/geekfacebook.png" />
+	<meta property="og:fb_admins" content="502610142,205486880281" />
+	<meta property="fb:app_id" content="310641919372843" />
+
+
+
+<meta name="description" content="">
+
+	<meta name="keywords" content="board game, boardgames, boardgame, board, games, game, hobby, boardgamegeek, geek, geekdo">
+
+	   <meta http-equiv="content-type" content="text/html;charset=UTF-8">	
+							<link rel='stylesheet' type='text/css' href='//cf.geekdo-static.com/static/css_master2_5a68d1c5a9ebe.css'>
+						
+												
+			<style type='text/css'>
+					
+			.icon
+			{
+				background-image: url('https://cf.geekdo-static.com/sprites/icons/tileicon_0_25.png');
+			}			
+			</style>
+
+			<link rel="apple-touch-icon" 	href="https://cf.geekdo-static.com/icons/appleicon.png" />
+	   	<link rel="shortcut icon" 		href="https://cf.geekdo-static.com/icons/favicon.ico" type="image/ico" />
+			<link rel="icon" 					href="https://cf.geekdo-static.com/icons/favicon.ico" type="image/ico" />
+	   	<link rel="search" 				href="/game-opensearch.xml" type="application/opensearchdescription+xml" title="BGG Game Search" />
+
+	   
+	   
+	   <title>mattman861 | User Collection | BoardGameGeek</title>
+
+<script type="text/javascript">
+	window.google_analytics_uacct = "UA-104725-1";
+	var googletag = googletag || { };
+	googletag.cmd = googletag.cmd || [];
+	( function() {
+		var gads = document.createElement('script');
+		gads.async = true; 
+		gads.type  = 'text/javascript';
+		gads.src   = "//www.googletagservices.com/tag/js/gpt.js";
+		var node = document.getElementsByTagName('script')[0];
+		node.parentNode.insertBefore(gads, node);
+	} )();
+
+	adunits = [
+		{
+			name:    'boardgame_button_120x45',
+			size:    [ 120, 45 ],
+			target:  'dfp-button'
+	   },
+		{
+			name:    'boardgame_leaderboard_728x90',
+			size:    [ 728, 90 ],
+			target:  'dfp-leaderboard'
+	   },
+		{
+			name:    'boardgame_skyscraper_160x600',
+			size:    [ 160, 600 ],
+			target:  'dfp-skyscraper'
+	   },
+		{
+			name:    'boardgame_rectangle_300x250',
+			size:    [ 300, 250 ],
+			target:  'dfp-medrect'
+	   },
+		{
+			name:    'boardgame_button_120x90',
+			size:    [ 120, 90 ],
+			target:  'dfp-giftguide'
+		}
+	];
+
+ 	googletag.cmd.push(function() {	
+		for( var i=0; i< adunits.length; i++ )
+		{
+			unit = adunits[i];
+		   googletag.defineUnit('/1005854/ca-pub-7206761047394129/'+unit.name, unit.size, unit.target).
+		     addService(googletag.pubads());		
+		}
+
+		
+	   googletag.pubads().setTargeting( "subdomain", "all" );
+   	googletag.enableServices();
+ 	} );
+</script>
+
+		
+	</head>
+
+<body   class='yui-skin-sam'>
+	
+			<script type='text/javascript' src='//cf.geekdo-static.com/static/js_master2_5a991e8adae11.js'></script>
+				
+		
+	
+	
+
+	<div id="overDiv" style="position:absolute; visibility:hidden; z-index:1000;"></div>
+
+<script>
+function start() {
+	
+}
+
+function ondomready() {
+			GEEK.apiPrefix = 'https://api.geekdo.com';
+	
+			Amazon_LoadAds();
+		
+	GEEK.addHandlers();
+}
+
+window.addEvent('domready', function() {
+	ondomready();
+} );
+window.onload = start;
+</script>
+
+<div id='container'>	
+	<div id='maincontent'>										
+		
+				
+					<table width='100%' style='margin:10px 0;'>
+	<tr>
+		<td width='120' valign='top'>
+			<a href="/"><img style='width:120px; height:90px;' src="https://cf.geekdo-static.com/images/geekdo/bgg_cornerlogo.png" class='fl'></a>
+			
+			
+		</td>
+		
+		<td style='padding-left:10px; width:90px;'>
+			<div class='menu_login'>
+			
+	<script type="text/javascript" charset="utf-8">
+		window.addEvent("domready", function()
+		{
+			new OverText($('login_username'), {poll:true});
+			new OverText($('login_password'), {poll:true});
+		});
+	</script>
+	
+
+	<form method="post" action="/login" style='padding:0; margin:0; margin-top:4px;'>
+		<input type="hidden" name="lasturl" value="/collection/user/mattman861?sort=rating&amp;sortdir=desc&amp;rankobjecttype=subtype&amp;rankobjectid=1&amp;columns=title%7Crating%7Cbggrating&amp;minrating=8&amp;geekranks=%0A%09%09%09%09%09%09%09%09%09Board+Game+Rank%0A%09%09%09%09%09%09%09%09&amp;excludesubtype=boardgameexpansion&amp;objecttype=thing&amp;ff=1&amp;subtype=boardgame">
+		<div class='loginbox'>
+			<div>
+				<input type='text' id='login_username' name='username' alt='Username'>
+			</div>
+			<div>
+				<input type='password' id='login_password' name='password' alt='Password'>				
+			</div>
+			<input type='submit' value='Sign in'><br>
+			<a href="/register">Register</a>
+		</div>
+	</form>
+	</div>
+
+		</td>
+		
+		<td>						
+					
+			
+				<div id='header' style='width:550px; min-width:550px;'>
+							
+				<div id='header_top'>			
+					<div class='mainmenu'>
+	<ul class='mainmenutabs'>
+		<li class='js-tablist'>
+				<a class='selected' href="//boardgamegeek.com">
+				<div class='fl'>
+											Board Games
+									</div>
+							<span><div class="arrow"><img class='icon' src='data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=='></div></span>
+			</a>
+			<div class='dn'>
+				<div class='menutab-open' id='subdomain_links' style='width:370px;'>
+					<ul>
+						<li><a href="/">Home</a></li>
+						<li><a href="/recentadditions">Recent Additions</a></li>
+						<li><a href="/wiki/page/Welcome_to_BoardGameGeek">Welcome</a></li>
+						<li><a href="/wiki/page/Index">Wiki</a></li>
+					</ul>
+					<div class='clear'></div>
+					<div class='submenu_header'>Subdomains</div>
+					<ul>						
+						<li><a href="/all">All</a></li>
+																					<li><a href="/abstracts">Abstract Games</a></li>
+																												<li><a href="/cgs">Customizable Games</a></li>
+																												<li><a href="/childrensgames">Children&#039;s Games</a></li>
+																												<li><a href="/familygames">Family Games</a></li>
+																												<li><a href="/partygames">Party Games</a></li>
+																												<li><a href="/strategygames">Strategy Games</a></li>
+																												<li><a href="/thematic">Thematic Games</a></li>
+																												<li><a href="/wargames">Wargames</a></li>
+																		</ul>
+				</div>
+			</div>
+						
+		</li>
+		<li class='js-tablist'>
+			<a  href="//rpggeek.com/">
+				<div class='fl'>
+					RPGs
+				</div>
+						</a>
+						
+		</li>
+
+		<li class='js-tablist'>
+			<a  href="//videogamegeek.com/">
+				<div class='fl'>
+											Video Games
+									</div>
+						</a>
+						
+		</li>
+
+		<li class='js-tablist' id="bggcon_label">
+			<a href="/bggcon"><div class='fl'><span style='border: solid 1px orange; background:orange; border-radius:10px; padding:3px; color:blue;'>Events</span></div></a>
+		</li>
+
+		<li class='js-tablist' id="logout_label">
+						<a href="javascript://" id='geek-login'>
+				<div class='fl'>
+					Login
+				</div>
+			</a>
+					</li>
+
+			</ul>
+</div>
+
+<div class='searchmenu' style='background-color:#1d265c;'>
+	<ul class='searchmenutabs'>
+		<li>	
+			<form method="get" action="/geeksearch.php">
+				SEARCH
+				<input type="hidden" name="action" value="search" id="action">
+				<select name='objecttype' onchange="$('sitesearch').focus();">
+									
+						<option  value='boardgame'>Board Game</option>
+									
+						<option  value='boardgameartist'>Artists</option>
+									
+						<option  value='boardgamedesigner'>Designers</option>
+									
+						<option  value='boardgamepublisher'>Publishers</option>
+									
+						<option  value='boardgameaccessory'>Accessories</option>
+									
+						<option  value='boardgamefamily'>Families</option>
+									
+						<option  value='article'>Forums</option>
+									
+						<option  value='geeklist'>GeekLists</option>
+									
+						<option  value='boardgamehonor'>Honors</option>
+									
+						<option  value='tag'>Tags</option>
+									
+						<option  value='wiki'>Wiki</option>
+									
+						<option  value='user'>Users</option>
+									
+						<option  value='boardgamepodcast'>Podcast</option>
+									
+						<option  value='boardgamepodcastepisode'>Podcast Ep.</option>
+									
+						<option  value='boardgameaccessory'>Accessory</option>
+														</select>
+				<input type="text"   name="q"  size="32"  id='sitesearch' autocorrect='off' autocapitalize='off'>
+				<input type='submit' name='B1' value='Go'>				
+			</form>
+		</li>
+		<li>
+			<a href="/advsearch/boardgame">Adv. Search</a>
+		</li>
+	</ul>
+	<div class='clear'></div>	
+</div>
+
+				</div>
+
+				<div class='menucontainer' style='background-color:#1d265c;'>
+					<ul class='submenutabs'>	
+	
+		
+	<li class='js-tablist'>
+	<a href="#"><div class='fl'>Browse</div><span><div class="arrow"><img class='icon' src='data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=='></div></span></a>
+		<div class='dn'>
+			<div class='menutab-open' id='browse_links' style='width:370px;'>
+				<div class='submenu_header'>
+					Database 
+									</div>
+				<ul>
+											<li><a href="/browse/boardgame">Games&nbsp;(97777)</a></li>											<li><a href="/browse/boardgamefamily">Families&nbsp;(2767)</a></li>											<li><a href="/browse/boardgamecategory">Categories&nbsp;(84)</a></li>											<li><a href="/browse/boardgamemechanic">Mechanics&nbsp;(51)</a></li>											<li><a href="/browse/boardgameartist">Artists&nbsp;(17140)</a></li>											<li><a href="/browse/boardgamedesigner">Designers&nbsp;(26356)</a></li>											<li><a href="/browse/boardgamepublisher">Publishers&nbsp;(18268)</a></li>											<li><a href="/browse/boardgameaccessory">Accessories&nbsp;(1594)</a></li>											<li><a href="/browse/boardgamehonor">Honors&nbsp;(3076)</a></li>										<li><a href="/boardgame/random">Random Game</a></li>
+					<li><a href='/gonecardboard'>Gone Cardboard</a></li>
+				</ul>
+				<div class='clear'></div>
+				
+				<div class='submenu_header'>User Submitted Content</div>
+				<ul>
+					<li><a href="/files/boardgame/all">Files </a></li>
+					<li><a href="/images/boardgame/all?sort=recent">Images</a></li>					
+					<li><a href="/thread/browse/boardgame/0?sort=recent&amp;forumname=reviews">Reviews </a></li>
+					<li><a href="/thread/browse/boardgame/0?sort=recent&amp;forumname=sessions">Session Reports </a></li>
+					<li><a href="/videos/boardgame/all">Videos</a></li>										
+					<li><a href="/blogs">Blogs</a></li>
+				</ul>
+				<div class='clear'></div>
+				
+				<div class='submenu_header'>Podcasts</div>
+					<ul>
+						<li><a href="/browse/boardgamepodcast">Podcasts </a></li>
+						<li><a href="/browse/boardgamepodcastepisode">Podcast Episodes </a></li>
+					</ul>
+				<div class='clear'></div>					
+			</div>
+		</div>					
+	</li>	
+	
+	<li class='js-tablist'>
+	<a href="/forums/region/1/boardgamegeek"><div class='fl'>Forums</div><span><div class="arrow"><img class='icon' src='data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=='></div></span></a>
+		<div class='dn'>
+			<div class='menutab-open'  style='width:250px;'>
+				<ul>
+					<li><a href="/forums/region/1/boardgamegeek">Forums</a></li>
+					<li><a href="/thread/browse/region/1?sort=hot&amp;days=2">Hot</a></li>							
+					<li><a href="/thread/browse/region/1?sort=recent">Recent</a></li>
+					<li><a href="/thread/browse/region/1?sort=active">Active</a></li>
+					<li><a href="/forum/search/region/1">Search</a></li>
+					<li><a href="/article/create/region/1">Post Thread</a></li>
+					<li><a href="/wiki/page/Admins">Moderators</a></li>
+					<li><a href="/thread/bookmarks">Bookmarks</a></li>
+					<li><a href="/thread/subscriptions">Subscriptions</a></li>						
+					<li><a href="/community_rules">Rules</a></li>
+				</ul>
+				
+							</div>
+		</div>					
+	</li>	
+
+	<li class='js-tablist'>
+	<a href="#"><div class='fl'>GeekLists</div><span><div class="arrow"><img class='icon' src='data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=='></div></span></a>
+		<div class='dn'>
+			<div class='menutab-open'  style='width:150px;'>
+				<ul>
+					<li><a href="/geeklist/lists?sortby=hot&amp;interval=twodays">Hot</a></li>
+					<li><a href="/geeklist/lists?sortby=date">Recent</a></li>
+					<li><a href="/geeklist/lists?sortby=active">Active</a></li>							
+					<li><a href="/geeklist/favorites">Favorites</a></li>
+					<li><a href="/geeklist/mylists">My GeekLists</a></li>
+					<li><a href="/geeklist/new">Create New GeekList</a></li>
+				</ul>
+			</div>
+		</div>					
+	</li>	
+
+	<li class='js-tablist'>
+	<a href="#"><div class='fl'>Bazaar</div><span><div class="arrow"><img class='icon' src='data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=='></div></span></a>
+		<div class='dn'>
+			<div class='menutab-open' style='width:150px;'>
+				<ul>
+					<li><a href="/geekmarket">Geek Market</a></li>
+					<li><a href="/trade">Trades</a></li>
+					<li><a href="http://boardgamegeekstore.com">Geek Store</a></li>
+				</ul>
+				<div class='clear'></div>
+				<div class='submenu_header'>eBay</div>
+				<ul>
+					<li><a href="/geekbay/browse?sort=hot">Hot</a></li>
+					<li><a href="/geekbay/browse?sort=endtime">Ending</a></li>
+					<li><a href="/geekbay/browse?sort=recent">Recently Added</a></li>
+				</ul>
+			</div>
+		</div>					
+	</li>	
+
+	<li class='js-tablist'>
+	<a href="#"><div class='fl'>Misc</div><span><div class="arrow"><img class='icon' src='data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=='></div></span></a>
+		<div class='dn'>
+			<div class='menutab-open' style='width:250px;'>
+				<ul>
+					<li><a href="/guild/home">Guilds</a></li>
+					<li><a href="/geekmod">GeekMod</a></li>
+					<li><a href="/geekchat">GeekChat</a></li>
+					<li><a href="/geekquestions">GeekQuestions</a></li> 
+					<li><a href="/stats.php">Stats</a></li>
+					<li><a href="/users.php">Find Users</a></li>
+					<li><a href="/recentadditions">RSS</a></li>
+					<li><a href="/tags/cloud">Tag Cloud</a></li>
+					<li><a href="/users?showavatar=1">Avatars</a></li>
+					<li><a href="/forum/88/boardgamegeek/bgg-bugs">Bugs</a></li>
+					<li><a href="/microbadges">Microbadges</a></li>
+					<li><a href="/geekads/manager">Ad Manager</a></li>
+					<li><a href="/geekexchange/browse">GeekExchange</a></li>
+					<li><a href="/collection/current">GeekCurrent</a></li>
+				</ul>
+				<div class='clear'></div>
+				<div class='submenu_header'>Add to Database</div>
+				<ul>
+					<li><a href="/item/create/boardgame">Board Game</a></li>
+					<li><a href="/item/create/boardgameaccessory">Accessory</a></li>
+					<li><a href="/item/create/boardgameperson">Person</a></li>
+					<li><a href="/item/create/boardgamepublisher">Publisher</a></li>
+					<li><a href="/item/create/boardgamefamily">Family</a></li>
+					<li><a href="/item/create/boardgamepodcast">Podcast</a></li>
+					
+				</ul>				
+			</div>
+		</div>					
+	</li>	
+	
+	<li class='js-tablist'>
+	<a href="#"><div class='fl'>Help</div><span><div class="arrow"><img class='icon' src='data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=='></div></span></a>
+		<div class='dn'>
+			<div class='menutab-open' style='width:125px;'>
+				<ul>
+					<li><a href="/wiki/page/BoardGameGeek_FAQ">FAQ</a></li>
+					<li><a href="/wiki/page/Guide_To_BoardGameGeek">Guide To BGG</a></li>
+					<li><a href="/wiki/page/Glossary">Glossary</a></li>
+					<li><a href="/wiki/page/Admins">Admins</a></li>
+				</ul>
+			</div>
+		</div>					
+	</li>	
+	
+	
+</ul>
+
+				</div>
+					
+				<div class='clear-both'></div>
+			</div>
+		</td>
+
+				<td width='100%'>
+			<div class='menu_noquickbar_top'></div>
+			<div class='menu_noquickbar_bottom'></div>
+		</td>
+					
+	</tr>
+</table>
+
+				<table width='100%'>
+			<tr>
+								
+				<td valign='top' >
+					<table width='100%'>
+						<tr>
+							<td valign='top'>
+								
+								<div id='main_content'>
+																		<center>
+																					<div id='dfp-leaderboard' style='margin-bottom:10px;'>
+											  <script type="text/javascript">
+													googletag.cmd.push(function() {googletag.display('dfp-leaderboard'); } );
+											  </script>
+											</div>
+																			</center>
+									                                    
+									<div id='geekcollection_outerview'>
+	<div id='collection_status' style='position:absolute; background:red; color:white;'></div>
+
+<div id='geekcollection_headers'>
+	<form autocomplete=off  id='collectionfilterform' onsubmit="$('pageID').value=1; CE_GetCollection(); return false;">
+	<input type='hidden' id='username' 			name='username' 			value='mattman861'>
+	<input type='hidden' id='userid' 			name='userid' 				value='1226438'>
+	<input type='hidden' id='gallery'			name='gallery' 			value=''>
+	<input type='hidden' id='sort'				name='sort' 				value='rating'>	
+	<input type='hidden' id='sortdir'			name='sortdir' 			value='desc'>
+	<input type='hidden' id='page'				name='page' 				value=''>
+	<input type='hidden' id='pageID'				name='pageID' 				value='1'>		
+	<input type='hidden' id='ff'					name='ff' 					value='1'>
+	<input type="hidden" id="hiddencolumns" 	name="hiddencolumns" 	value="">
+	<input type="hidden" id="publisherid" 		name="publisherid" 		value="">
+
+	<table class='forum_table' width='100%'>
+		<tr>		
+			<td class='sf' width='105' nowrap>  
+					<a onmouseover="return overlib('List Mode', WRAP );" 
+						onmouseout="return nd();"
+						href="javascript://" 
+						onclick="CE_SetGalleryMode( '' );"><img alt='list' title='' src="https://cf.geekdo-static.com/images/collection/list_view.gif" border=0 align='absmiddle'></a> 
+				<span class='dull'>|</span> 
+					<a onmouseover="return overlib('Large Gallery Mode', WRAP );" 
+					   onmouseout="return nd();" 
+					   href="javascript://" 
+					   onclick="CE_SetGalleryMode( 'large' );"><img alt='lg gallery' title='' src="https://cf.geekdo-static.com/images/collection/gallery_large.gif" border=0 align='absmiddle'></a>
+				<span class='dull'>|</span> 
+					<a onmouseover="return overlib('Small Gallery Mode', WRAP );" 
+					   onmouseout="return nd();" 
+					   href="javascript://" 
+					   onclick="CE_SetGalleryMode( 'small' );"><img alt='sm gallery' title='' src="https://cf.geekdo-static.com/images/collection/gallery_small.gif" border=0 align='absmiddle'></a>
+			</td>
+			<td nowrap>		
+				
+				<div style='width:100px'></div>
+		
+			</td>
+			<td nowrap>
+				Search 
+				<select name='searchfield'>
+					<option value='title'>Title</option>
+					<option value='comment'>Comments</option>
+					<!--<option value='tags'>Tags</option>-->
+					<option value='conditiontext'>Trade Condition</option>
+					<option value='wishlistcomment'>Wishlist Comment</option>
+										<option value='haspartslist'>Has Parts List</option>
+															<option value='wantpartslist'>Want Parts List</option>
+									</select>
+				<input type='text' name='searchstr' id='searchstr' value="">
+				<input type='button' value='Go &gt;'  onclick="$('filters').style.display='none'; $('pageID').value=1; CE_GetCollection(); return false;">
+				<input type='button'  value='Clear'   onclick="$('filters').style.display='none'; $('pageID').value=1; $('searchstr').value = ''; CE_GetCollection(); return false;">
+			</td>
+		</tr>
+
+	
+		<tr>
+			<td colspan=4>						
+				<span style='float:left;'>
+					<a href="javascript://" onclick="$('columnfilter').style.display='none'; 
+																$('views').style.display='none'; 
+																Toggle( 'filters' );">Filters &raquo;</a>&nbsp;&nbsp;&nbsp;
+					<a href="javascript://" onclick="$('filters').style.display='none'; 
+																$('views').style.display='none'; 
+																Toggle( 'columnfilter' );">Columns &raquo;</a>&nbsp;&nbsp;&nbsp;
+					<a href="javascript://" onclick="$('columnfilter').style.display='none'; 
+																$('filters').style.display='none'; 
+																Toggle( 'views' );">Views &raquo;</a>&nbsp;&nbsp;&nbsp;
+				
+				</span>
+												
+				<div class='clear'></div>
+
+				<div id='presets' class='collection_filters' style='display:none;'>
+					<div><a href="javascript://" onclick="CE_Preset( 'wishlists' );">Wishlists</a></div>
+					<div><a href="javascript://" onclick="CE_Preset( 'plays' );">Plays</a></div>
+					<div><a href="javascript://" onclick="CE_Preset( 'trades' );">Trades</a></div>
+				</div>				
+
+				<div id='columnfilter' class='collection_filters' style='display:none;'>
+	<div class='collectionfilter_commandbar'>
+		<a href="javascript://" onclick="$('columnfilter').style.display='none';"><img style='top:3px; position:relative;' src="https://cf.geekdo-static.com/images/icons/silkicons/cross.png" border=0></a>
+		Columns
+	</div>
+	<input type="hidden" name="rankobjecttype" value="subtype" id="rankobjecttype">
+	<input type="hidden" name="rankobjectid" value="1" id="rankobjectid">
+	<div class='collectionfilter_body'>	                              
+			<div class='m5'><input type="checkbox" name="columns[]"  value="title"							CHECKED					id="columns[]">&nbsp;Title</div>
+			<div class='m5'><input type="checkbox" name="columns[]"  value="thumbnail" 					 			id="columns[]">&nbsp;Thumbnail</div>
+		<i><b>Personal copy</b></i><br> 
+			<div class="ml20 m5"><input type="checkbox" name="columns[]"  value="status"					 				id="columns[]">&nbsp;Status</div>
+						<div class="ml20 m5"><input type="checkbox" name="columns[]"  value="version" 				 				id="columns[]">&nbsp;Version</div>
+						<div class="ml20 m5"><input type="checkbox" name="columns[]"  value="ownership" 				 			id="columns[]">&nbsp;Private info</div>
+			<div class="ml20 m5"><input type="checkbox" name="columns[]"  value="lastmodified" 			 		id="columns[]">&nbsp;Date Last Modified</div>
+			<div class="ml20 m5"><input type="checkbox" name="columns[]"  value="acquisitiondate"		 	id="columns[]">&nbsp;Acquisition Date</div>
+			<div class="ml20 m5"><input type="checkbox" name="columns[]"  value="postdate" 				 				id="columns[]">&nbsp;Date Added</div>
+			<div class="ml20 m5"><input type="checkbox" name="columns[]"  value="wishlistcomment" 		 	id="columns[]">&nbsp;Wishlist Comment</div>
+		<i><b>General Info</b></i><br> 
+			<div class="ml20 m5">
+				<input type="checkbox" name="columns[]"  value="rank" 					 				id="columns[]">&nbsp;Rank
+				<select name="geekranks" id="geekranks" size="1" onChange=" var thisel = $('geekranks');
+																								AssignGeekRanks( thisel );">
+																										<option id='ranksubtype1' SELECTED>
+									Board Game Rank
+								</option>
+																				
+																					<option id='ranksubtype62' >
+									Accessory Rank
+								</option>
+																				
+																										
+																										
+																										
+																										
+																					<option id='ranksubtype45' >
+									Board Game Periodical Rank
+								</option>
+																				
+																					<option id='ranksubtype48' >
+									Board Game Issue Rank
+								</option>
+																				
+																										
+																										
+																																					
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																					<option id='rankfamily4666' >
+									Abstract Game Rank
+								</option>
+																				
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																					<option id='rankfamily4667' >
+									Customizable Rank
+								</option>
+																				
+																					<option id='rankfamily4665' >
+									Children&#039;s Game Rank
+								</option>
+																				
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																					<option id='rankfamily5499' >
+									Family Game Rank
+								</option>
+																				
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																					<option id='rankfamily5498' >
+									Party Game Rank
+								</option>
+																				
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																					<option id='rankfamily5497' >
+									Strategy Game Rank
+								</option>
+																				
+																										
+																										
+																										
+																					<option id='rankfamily5496' >
+									Thematic Rank
+								</option>
+																				
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																					<option id='rankfamily4664' >
+									War Game Rank
+								</option>
+																				
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+															</select>
+			</div>
+			<div class="ml20 m5"><input type="checkbox" name="columns[]"  value="rating" 					CHECKED 				id="columns[]">&nbsp;Rating</div>
+			<div class="ml20 m5"><input type="checkbox" name="columns[]"  value="bggrating" 				CHECKED 			id="columns[]">&nbsp;Geek Rating</div>
+			<div class="ml20 m5"><input type="checkbox" name="columns[]"  value="avgrating" 				 			id="columns[]">&nbsp;Avg Rating</div>
+			<div class="ml20 m5"><input type="checkbox" name="columns[]"  value="numvoters" 				 			id="columns[]">&nbsp;Num Voters</div>
+						<div class="ml20 m5"><input type="checkbox" name="columns[]"  value="plays" 					 					id="columns[]">&nbsp;Plays</div>
+						<div class="ml20 m5"><input type="checkbox" name="columns[]"  value="comment" 				 				id="columns[]">&nbsp;Comment</div>
+			<div class="ml20 m5"><input type="checkbox" name="columns[]"  value="shop" 					 					id="columns[]">&nbsp;Shop</div>
+			<div class="ml20 m5"><input type="checkbox" name="columns[]"  value="subdomains" 			 			id="columns[]">&nbsp;Subdomain Polls</div>
+		<i><b>Trade Info</b></i><br>
+			<div class="ml20 m5"><input type="checkbox" name="columns[]"  value="conditiontext" 		 		id="columns[]">&nbsp;Trade Condition</div>
+						<div class="ml20 m5"><input type="checkbox" name="columns[]"  value="wantpartslist" 		 		id="columns[]">&nbsp;Wants Parts</div>
+									<div class="ml20 m5"><input type="checkbox" name="columns[]"  value="haspartslist" 			 		id="columns[]">&nbsp;Has Parts</div>
+						<div class="ml20 m5"><input type="checkbox" name="columns[]"  value="commands" 				 				id="columns[]">&nbsp;Commands</div>
+				
+		<input type='button' value='Done' onclick="$('columnfilter').style.display='none'; $('pageID').value=1; CE_GetCollection( 1); return false;">
+	</div>
+</div>
+<script type="text/javascript" charset="utf-8">
+var GEEKRanks = [];
+						GEEKRanks['ranksubtype1'] = { rankobjecttype : 'subtype', rankobjectid : '1'};
+															
+						GEEKRanks['ranksubtype62'] = { rankobjecttype : 'subtype', rankobjectid : '62'};
+															
+																
+																
+																
+																
+						GEEKRanks['ranksubtype45'] = { rankobjecttype : 'subtype', rankobjectid : '45'};
+															
+						GEEKRanks['ranksubtype48'] = { rankobjecttype : 'subtype', rankobjectid : '48'};
+															
+																
+																
+																	
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+						GEEKRanks['rankfamily4666'] = { rankobjecttype : 'family', rankobjectid : '4666'};
+															
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+						GEEKRanks['rankfamily4667'] = { rankobjecttype : 'family', rankobjectid : '4667'};
+															
+						GEEKRanks['rankfamily4665'] = { rankobjecttype : 'family', rankobjectid : '4665'};
+															
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+						GEEKRanks['rankfamily5499'] = { rankobjecttype : 'family', rankobjectid : '5499'};
+															
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+						GEEKRanks['rankfamily5498'] = { rankobjecttype : 'family', rankobjectid : '5498'};
+															
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+						GEEKRanks['rankfamily5497'] = { rankobjecttype : 'family', rankobjectid : '5497'};
+															
+																
+																
+																
+						GEEKRanks['rankfamily5496'] = { rankobjecttype : 'family', rankobjectid : '5496'};
+															
+																
+																
+																
+																
+																
+																
+																
+																
+																
+						GEEKRanks['rankfamily4664'] = { rankobjecttype : 'family', rankobjectid : '4664'};
+															
+																
+																
+																
+																
+																
+																
+																
+																
+																
+	
+
+AssignGeekRanks( $('geekranks') );
+
+function AssignGeekRanks( el )
+{
+	$('rankobjecttype').set('value', GEEKRanks[el.getSelected().get('id')].rankobjecttype);
+ 	$('rankobjectid').set('value', GEEKRanks[el.getSelected().get('id')].rankobjectid);
+}
+
+</script>
+
+				<div id='collection_views'>				
+					<div id='views' class='collection_filters' style='display:none;'>
+	<div class='collectionfilter_commandbar'>
+		<a href="javascript://" onclick="$('views').style.display='none';"><img style='top:3px; position:relative;' src="https://cf.geekdo-static.com/images/icons/silkicons/cross.png" border=0></a>
+		Views
+	</div>
+	<div id='collectionviews' class='collectionfilter_body'>
+		<table cellpadding='0' cellspacing='0' class='collection_views'>
+		<div id='usercollectionviews'>
+			
+		</div>
+		<div id='geekcollectionviews'>
+				<tr>
+		<td onclick="CE_SetView(46);" class="collection_views_cell" width='100px'>
+			<div>
+				
+			<a href="javascript://"><span id=viewname_46>All</span></a>
+			</div>
+		</td>
+		<td>
+					</td>		
+	</tr>
+	<tr>
+		<td onclick="CE_SetView(47);" class="collection_views_cell" width='100px'>
+			<div>
+				
+			<a href="javascript://"><span id=viewname_47>For Trade</span></a>
+			</div>
+		</td>
+		<td>
+					</td>		
+	</tr>
+	<tr>
+		<td onclick="CE_SetView(15);" class="collection_views_cell" width='100px'>
+			<div>
+				
+			<a href="javascript://"><span id=viewname_15>Owned</span></a>
+			</div>
+		</td>
+		<td>
+					</td>		
+	</tr>
+	<tr>
+		<td onclick="CE_SetView(49);" class="collection_views_cell" width='100px'>
+			<div>
+				
+			<a href="javascript://"><span id=viewname_49>Wishlist</span></a>
+			</div>
+		</td>
+		<td>
+					</td>		
+	</tr>
+
+		</div>
+		</table>
+		<a href="javascript://" onclick="CE_SaveView(); return false;">Save current view as...</a>							
+	</div>	
+</div>
+
+				</div>
+				<div id='filters' class='collection_filters' style='display:none;'>
+					<div class='collectionfilter_commandbar'>
+						<a href="javascript://" onclick="$('filters').style.display='none';"><img style='top:3px; position:relative;' src="https://cf.geekdo-static.com/images/icons/silkicons/cross.png" border=0></a>
+						Filters
+					</div>
+					<div class='collectionfilter_body'>					
+						<input type='button' value='Apply Filters' onclick="$('filters').style.display='none'; $('pageID').value=1; CE_GetCollection( 1 ); return false;">
+
+						<table class='collfilter_table' width='100%' style='margin-top:5px;'>
+							<tr>
+								<td width='100'><b>Item Filters</b></td>
+								<td>
+									<select name='subtype'>
+										<option SELECTED value='boardgame'>Board Games</option>
+										<option  value='boardgameexpansion'>Board Game Expansion</option>
+										<option  value='boardgameaccessory'>Board Game Accessories</option>
+										<option  value='boardgameperiodical'>Board Game Periodicals</option>
+										<option  value='boardgameissue'>Board Game Issues</option>
+										<option  	value='rpgitem'>RPG Items</option>
+										<option  		value='rpg'>RPGs</option>									
+										<option  	value='rpgissue'>RPG Issues</option>									
+										<option  value='rpgperiodical'>RPG Periodical</option>
+										<option 	value='videogame'>Video Games</option>
+										<option 	value='videogamehardware'>Video Game Hardware</option>
+										<option 	value='videogameexpansion'>Video Game Expansion</option>
+									</select>
+								</td>
+							</tr>
+							<tr>
+								<td width='100'><b>Exclude</b></td>
+								<td>
+									<select name='excludesubtype'>
+										<option></option>
+										<option SELECTED value='boardgameexpansion'>Board Game Expansion</option>
+									</select>
+								</td>
+							</tr>
+						</table>
+					
+						<table class='collfilter_table' width='100%' style='margin-top:5px;'>
+							<tr>
+								<td colspan=3><b>Status Filters</b></td>
+							</tr>
+							<tr>
+								<td valign='top'>
+									<div>
+	<span style='float:left; width:100px;'>Own:</span>
+	<span style='float:left;'><select name='own' id='own'>
+		<option SELECTED 	value="both"></option>
+		<option  		value="1">Yes</option>
+		<option  		value="0">No</option>
+	</select>				
+	</span>
+</div>
+<div class='clear'></div>
+								
+									<div>
+	<span style='float:left; width:100px;'>Trade:</span>
+	<span style='float:left;'><select name='trade' id='trade'>
+		<option SELECTED 	value="both"></option>
+		<option  		value="1">Yes</option>
+		<option  		value="0">No</option>
+	</select>				
+	</span>
+</div>
+<div class='clear'></div>
+
+									<div>
+	<span style='float:left; width:100px;'>Want In Trade:</span>
+	<span style='float:left;'><select name='want' id='want'>
+		<option SELECTED 	value="both"></option>
+		<option  		value="1">Yes</option>
+		<option  		value="0">No</option>
+	</select>				
+	</span>
+</div>
+<div class='clear'></div>
+
+									<div>
+	<span style='float:left; width:100px;'>Want To Buy:</span>
+	<span style='float:left;'><select name='wanttobuy' id='wanttobuy'>
+		<option  	value="both"></option>
+		<option  		value="1">Yes</option>
+		<option  		value="0">No</option>
+	</select>				
+	</span>
+</div>
+<div class='clear'></div>
+
+									<div>
+	<span style='float:left; width:100px;'>Prev. Owned:</span>
+	<span style='float:left;'><select name='prevowned' id='prevowned'>
+		<option  	value="both"></option>
+		<option  		value="1">Yes</option>
+		<option  		value="0">No</option>
+	</select>				
+	</span>
+</div>
+<div class='clear'></div>
+
+								</td>						
+								<td valign='top'>
+									<div>
+	<span style='float:left; width:100px;'>Comment:</span>
+	<span style='float:left;'><select name='comment' id='comment'>
+		<option SELECTED 	value="both"></option>
+		<option  		value="1">Yes</option>
+		<option  		value="0">No</option>
+	</select>				
+	</span>
+</div>
+<div class='clear'></div>
+
+									<div>
+	<span style='float:left; width:100px;'>Wishlist:</span>
+	<span style='float:left;'><select name='wishlist' id='wishlist'>
+		<option SELECTED 	value="both"></option>
+		<option  		value="1">Yes</option>
+		<option  		value="0">No</option>
+	</select>				
+	</span>
+</div>
+<div class='clear'></div>
+
+									<div>
+	<span style='float:left; width:100px;'>Rated:</span>
+	<span style='float:left;'><select name='rated' id='rated'>
+		<option SELECTED 	value="both"></option>
+		<option  		value="1">Yes</option>
+		<option  		value="0">No</option>
+	</select>				
+	</span>
+</div>
+<div class='clear'></div>
+
+													
+									<div>
+	<span style='float:left; width:100px;'>Played:</span>
+	<span style='float:left;'><select name='played' id='played'>
+		<option  	value="both"></option>
+		<option  		value="1">Yes</option>
+		<option  		value="0">No</option>
+	</select>				
+	</span>
+</div>
+<div class='clear'></div>
+
+																
+									<div>
+	<span style='float:left; width:100px;'>Want to Play:</span>
+	<span style='float:left;'><select name='wanttoplay' id='wanttoplay'>
+		<option  	value="both"></option>
+		<option  		value="1">Yes</option>
+		<option  		value="0">No</option>
+	</select>				
+	</span>
+</div>
+<div class='clear'></div>
+
+								</td>
+								<td valign='top'>
+									<div>
+	<span style='float:left; width:100px;'>Preordered:</span>
+	<span style='float:left;'><select name='preordered' id='preordered'>
+		<option  	value="both"></option>
+		<option  		value="1">Yes</option>
+		<option  		value="0">No</option>
+	</select>				
+	</span>
+</div>
+<div class='clear'></div>
+
+																		<div>
+	<span style='float:left; width:100px;'>Has Parts:</span>
+	<span style='float:left;'><select name='hasparts' id='hasparts'>
+		<option SELECTED 	value="both"></option>
+		<option  		value="1">Yes</option>
+		<option  		value="0">No</option>
+	</select>				
+	</span>
+</div>
+<div class='clear'></div>
+
+																											<div>
+	<span style='float:left; width:100px;'>Want Parts:</span>
+	<span style='float:left;'><select name='wantparts' id='wantparts'>
+		<option SELECTED 	value="both"></option>
+		<option  		value="1">Yes</option>
+		<option  		value="0">No</option>
+	</select>				
+	</span>
+</div>
+<div class='clear'></div>
+
+																	</td>
+
+							</tr>
+						</table>
+
+						<table class='collfilter_table' width='100%'>
+							<tr>
+								<td colspan=4><b>Other</b></td>
+							</tr>
+							<tr>	
+								<td width='100'>Your Rating:</td>
+								<td width='100'>Min  <input type='text' name='minrating' size='3' value='8'></td>
+								<td width='100'>Max	<input type='text' name='rating' size='3' value=''></td>
+								<td></td>
+							</tr>						
+							<tr>	
+								<td width='100'>Geek Rating:</td>
+								<td width='100'>Min  <input type='text' name='minbggrating' size='3' value=''></td>
+								<td width='100'>Max	<input type='text' name='bggrating' size='3' value=''></td>
+								<td></td>
+							</tr>						
+							<tr>	
+								<td width='100'>Number of Plays:</td>
+								<td width='100'>Min  <input type='text' name='minplays' size='3' value=''></td>
+								<td width='100'>Max	<input type='text' name='maxplays' size='3' value=''></td>
+								<td></td>
+							</tr>						
+							<tr>
+								<td width='100'>Wishlist Priority</td>
+								<td>
+									<select name='wishlistpriority'>
+										<option></option>
+										<option value='1' >1 - Must have</option>
+										<option value='2' >2 - Love to have</option>
+										<option value='3' >3 - Like to have</option>
+										<option value='4' >4 - Thinking about it</option>
+										<option value='5' >5 - Don't buy this</option>
+									</select>
+								</td>
+							</tr>
+						</table>					
+					
+											
+						<input type='button' value='Apply Filters' onclick="$('filters').style.display='none'; $('pageID').value=1; CE_GetCollection( 1 ); return false;">
+					</div>
+				</div>	
+				<input type='submit' style='display:none;'>
+			</td>
+		</tr>
+	</table>
+</form>
+
+
+</div>
+
+<div id='collection'><div class='fl sf'>User: <a  href='/user/mattman861'>mattman861</a>: Board Game Collection<span id='collection_viewlabel'style='display:none;'>&nbsp;|&nbsp;View: <span id='collection_viewname'></span></span></div>
+
+<div style='text-align:right; margin-bottom:5px;' class='sf'>	
+	Download board games: (<a id='csv' href="/geekcollection.php?action=exportcsv&amp;subtype=boardgame&amp;username=mattman861&amp;all=1">all</a>&nbsp;|&nbsp;<a id='csv' href="/geekcollection.php?action=exportcsv&amp;subtype=boardgame&amp;username=mattman861">owned</a>)&nbsp;|&nbsp;	<a id='permalink' href="/collection/user/mattman861?sort=rating&amp;sortdir=desc&amp;rankobjecttype=subtype&amp;rankobjectid=1&amp;columns=title%7Crating%7Cbggrating&amp;minrating=8&amp;geekranks=%0A%09%09%09%09%09%09%09%09%09Board+Game+Rank%0A%09%09%09%09%09%09%09%09&amp;excludesubtype=boardgameexpansion&amp;objecttype=thing&amp;ff=1&amp;subtype=boardgame">Permalink</a>&nbsp;
+		|
+			Current Filters:
+			<span id='currfilters'>
+				
+																																																																																																									minrating=8 [<a href="javascript://" onclick="$('minrating').value='both'; CE_GetCollection( 1 );">X</a>]
+																																																																																																																																	</span>
+			</div>
+
+ 
+	<div class='geekcollection_pager'>
+	<span class='geekpages'>
+		1 to 20 of 20&nbsp;&nbsp;
+	
+			
+		Page 1.
+	
+			
+		<a href="javascript://" onclick="CE_SetPage( 1 );">1</a>
+	</span>
+	
+	<form autocomplete=off  id='form_pager_top' 
+	      style='display:inline;' 
+	      onsubmit="CE_SetPage( $('pageset').value ); return false;">
+		<input class='geekinput' type='text' name='pageset' id='pageset_top' size=4>
+		<input class='geekinput' type='submit' autocomplete="OFF" value='Go &gt;' onclick="CE_PageJump( $('pageset_top').value ); return false;">
+	</form>		
+</div>
+
+<table cellpadding=0 cellspacing=1 class='collection_table' width='100%' id='collectionitems'>
+<tr>	
+				
+		
+			<th class='collection_title'>
+						
+				<a href="javascript://" onclick="CE_SetSort( 'title' );">Title</a>
+					</th>
+	
+		
+					
+				<th class='collection_rating'>
+							<a href="javascript://" onclick="CE_SetSort( 'rating' );">		User<br>Rating
+		<img border=0 hspace=5 src='https://cf.geekdo-static.com/images/collection/arrow_down.gif'></a>
+						
+		</th>
+		
+			<th class='collection_bggrating'>
+						<a href="javascript://" onclick="CE_SetSort( 'bggrating' );">Geek Rating</a>
+						
+		</th>
+	
+	
+	
+	
+		
+	
+	
+	
+	
+	
+
+		
+	
+	
+	
+		
+	
+		
+	
+		
+	
+																					
+				</tr>
+
+
+	
+
+	
+			
+
+<tr id='row_37386262'>		
+						
+		
+		
+			<td id='CEcell_objectname1' 
+	class="collection_objectname 
+						"		
+
+	>
+	
+	<div id='status_objectname1'></div>
+	<div id='results_objectname1' style='z-index:1000;' onclick=''>
+		
+					<a  href="/boardgame/421/1830-railways-robber-barons"   >1830: Railways & Robber Barons</a>
+				
+							<span class='smallerfont dull'>(1986)</span>
+								
+	</div>
+</td>
+
+		
+		
+			<td id='CEcell_rating1' class='collection_rating ' align=center	>
+	<div id='status_rating1'></div>
+	<div id='results_rating1'>
+		<div style='background:#33cc99;' class='rating'>
+						<div class='ratingtext'>9.9</div>
+					 </div><div class='sf darkgray' >Nov&nbsp;2017</div>
+	</div>
+</td>	
+		
+			<td class='collection_bggrating' align='center'>
+			7.284		</td>
+	
+	
+		
+		
+
+		
+
+		
+
+		
+
+		
+
+   
+   
+		
+		
+		
+	
+		
+	
+		
+
+		
+
+														
+		
+			
+	</tr>
+
+					
+
+<tr id='row_40398068'>		
+						
+		
+		
+			<td id='CEcell_objectname2' 
+	class="collection_objectname 
+						"		
+
+	>
+	
+	<div id='status_objectname2'></div>
+	<div id='results_objectname2' style='z-index:1000;' onclick=''>
+		
+					<a  href="/boardgame/4098/age-steam"   >Age of Steam</a>
+				
+							<span class='smallerfont dull'>(2002)</span>
+								
+	</div>
+</td>
+
+		
+		
+			<td id='CEcell_rating2' class='collection_rating ' align=center	>
+	<div id='status_rating2'></div>
+	<div id='results_rating2'>
+		<div style='background:#33cc99;' class='rating'>
+						<div class='ratingtext'>9.7</div>
+					 </div><div class='sf darkgray' >Nov&nbsp;2017</div>
+	</div>
+</td>	
+		
+			<td class='collection_bggrating' align='center'>
+			7.400		</td>
+	
+	
+		
+		
+
+		
+
+		
+
+		
+
+		
+
+   
+   
+		
+		
+		
+	
+		
+	
+		
+
+		
+
+														
+		
+			
+	</tr>
+
+					
+
+<tr id='row_40187704'>		
+						
+		
+		
+			<td id='CEcell_objectname3' 
+	class="collection_objectname 
+						"		
+
+	>
+	
+	<div id='status_objectname3'></div>
+	<div id='results_objectname3' style='z-index:1000;' onclick=''>
+		
+					<a  href="/boardgame/169786/scythe"   >Scythe</a>
+				
+							<span class='smallerfont dull'>(2016)</span>
+								
+	</div>
+</td>
+
+		
+		
+			<td id='CEcell_rating3' class='collection_rating ' align=center	>
+	<div id='status_rating3'></div>
+	<div id='results_rating3'>
+		<div style='background:#33cc99;' class='rating'>
+						<div class='ratingtext'>9.5</div>
+					 </div><div class='sf darkgray' >Nov&nbsp;2017</div>
+	</div>
+</td>	
+		
+			<td class='collection_bggrating' align='center'>
+			8.104		</td>
+	
+	
+		
+		
+
+		
+
+		
+
+		
+
+		
+
+   
+   
+		
+		
+		
+	
+		
+	
+		
+
+		
+
+														
+		
+			
+	</tr>
+
+					
+
+<tr id='row_40193070'>		
+						
+		
+		
+			<td id='CEcell_objectname4' 
+	class="collection_objectname 
+						"		
+
+	>
+	
+	<div id='status_objectname4'></div>
+	<div id='results_objectname4' style='z-index:1000;' onclick=''>
+		
+					<a  href="/boardgame/127023/kemet"   >Kemet</a>
+				
+							<span class='smallerfont dull'>(2012)</span>
+								
+	</div>
+</td>
+
+		
+		
+			<td id='CEcell_rating4' class='collection_rating ' align=center	>
+	<div id='status_rating4'></div>
+	<div id='results_rating4'>
+		<div style='background:#33cc99;' class='rating'>
+						<div class='ratingtext'>9.5</div>
+					 </div><div class='sf darkgray' >Mar&nbsp;2018</div>
+	</div>
+</td>	
+		
+			<td class='collection_bggrating' align='center'>
+			7.532		</td>
+	
+	
+		
+		
+
+		
+
+		
+
+		
+
+		
+
+   
+   
+		
+		
+		
+	
+		
+	
+		
+
+		
+
+														
+		
+			
+	</tr>
+
+					
+
+<tr id='row_36311168'>		
+						
+		
+		
+			<td id='CEcell_objectname5' 
+	class="collection_objectname 
+						"		
+
+	>
+	
+	<div id='status_objectname5'></div>
+	<div id='results_objectname5' style='z-index:1000;' onclick=''>
+		
+					<a  href="/boardgame/62219/dominant-species"   >Dominant Species</a>
+				
+							<span class='smallerfont dull'>(2010)</span>
+								
+	</div>
+</td>
+
+		
+		
+			<td id='CEcell_rating5' class='collection_rating ' align=center	>
+	<div id='status_rating5'></div>
+	<div id='results_rating5'>
+		<div style='background:#33cc99;' class='rating'>
+						<div class='ratingtext'>9.4</div>
+					 </div><div class='sf darkgray' >Nov&nbsp;2017</div>
+	</div>
+</td>	
+		
+			<td class='collection_bggrating' align='center'>
+			7.660		</td>
+	
+	
+		
+		
+
+		
+
+		
+
+		
+
+		
+
+   
+   
+		
+		
+		
+	
+		
+	
+		
+
+		
+
+														
+		
+			
+	</tr>
+
+					
+
+<tr id='row_38281183'>		
+						
+		
+		
+			<td id='CEcell_objectname6' 
+	class="collection_objectname 
+						"		
+
+	>
+	
+	<div id='status_objectname6'></div>
+	<div id='results_objectname6' style='z-index:1000;' onclick=''>
+		
+					<a  href="/boardgame/43015/hansa-teutonica"   >Hansa Teutonica</a>
+				
+							<span class='smallerfont dull'>(2009)</span>
+								
+	</div>
+</td>
+
+		
+		
+			<td id='CEcell_rating6' class='collection_rating ' align=center	>
+	<div id='status_rating6'></div>
+	<div id='results_rating6'>
+		<div style='background:#33cc99;' class='rating'>
+						<div class='ratingtext'>9.4</div>
+					 </div><div class='sf darkgray' >Nov&nbsp;2017</div>
+	</div>
+</td>	
+		
+			<td class='collection_bggrating' align='center'>
+			7.410		</td>
+	
+	
+		
+		
+
+		
+
+		
+
+		
+
+		
+
+   
+   
+		
+		
+		
+	
+		
+	
+		
+
+		
+
+														
+		
+			
+	</tr>
+
+					
+
+<tr id='row_45603916'>		
+						
+		
+		
+			<td id='CEcell_objectname7' 
+	class="collection_objectname 
+						"		
+
+	>
+	
+	<div id='status_objectname7'></div>
+	<div id='results_objectname7' style='z-index:1000;' onclick=''>
+		
+					<a  href="/boardgame/35677/le-havre"   >Le Havre</a>
+				
+							<span class='smallerfont dull'>(2008)</span>
+								
+	</div>
+</td>
+
+		
+		
+			<td id='CEcell_rating7' class='collection_rating ' align=center	>
+	<div id='status_rating7'></div>
+	<div id='results_rating7'>
+		<div style='background:#33cc99;' class='rating'>
+						<div class='ratingtext'>9.3</div>
+					 </div><div class='sf darkgray' >Mar&nbsp;2018</div>
+	</div>
+</td>	
+		
+			<td class='collection_bggrating' align='center'>
+			7.783		</td>
+	
+	
+		
+		
+
+		
+
+		
+
+		
+
+		
+
+   
+   
+		
+		
+		
+	
+		
+	
+		
+
+		
+
+														
+		
+			
+	</tr>
+
+					
+
+<tr id='row_48692269'>		
+						
+		
+		
+			<td id='CEcell_objectname8' 
+	class="collection_objectname 
+						"		
+
+	>
+	
+	<div id='status_objectname8'></div>
+	<div id='results_objectname8' style='z-index:1000;' onclick=''>
+		
+					<a  href="/boardgame/220308/gaia-project"   >Gaia Project</a>
+				
+							<span class='smallerfont dull'>(2017)</span>
+								
+	</div>
+</td>
+
+		
+		
+			<td id='CEcell_rating8' class='collection_rating ' align=center	>
+	<div id='status_rating8'></div>
+	<div id='results_rating8'>
+		<div style='background:#33cc99;' class='rating'>
+						<div class='ratingtext'>9.3</div>
+					 </div><div class='sf darkgray' >Jan&nbsp;2018</div>
+	</div>
+</td>	
+		
+			<td class='collection_bggrating' align='center'>
+			7.897		</td>
+	
+	
+		
+		
+
+		
+
+		
+
+		
+
+		
+
+   
+   
+		
+		
+		
+	
+		
+	
+		
+
+		
+
+														
+		
+			
+	</tr>
+
+					
+
+<tr id='row_37975883'>		
+						
+		
+		
+			<td id='CEcell_objectname9' 
+	class="collection_objectname 
+						"		
+
+	>
+	
+	<div id='status_objectname9'></div>
+	<div id='results_objectname9' style='z-index:1000;' onclick=''>
+		
+					<a  href="/boardgame/124361/concordia"   >Concordia</a>
+				
+							<span class='smallerfont dull'>(2013)</span>
+								
+	</div>
+</td>
+
+		
+		
+			<td id='CEcell_rating9' class='collection_rating ' align=center	>
+	<div id='status_rating9'></div>
+	<div id='results_rating9'>
+		<div style='background:#33cc99;' class='rating'>
+						<div class='ratingtext'>9.2</div>
+					 </div><div class='sf darkgray' >Nov&nbsp;2017</div>
+	</div>
+</td>	
+		
+			<td class='collection_bggrating' align='center'>
+			7.873		</td>
+	
+	
+		
+		
+
+		
+
+		
+
+		
+
+		
+
+   
+   
+		
+		
+		
+	
+		
+	
+		
+
+		
+
+														
+		
+			
+	</tr>
+
+					
+
+<tr id='row_36311159'>		
+						
+		
+		
+			<td id='CEcell_objectname10' 
+	class="collection_objectname 
+						"		
+
+	>
+	
+	<div id='status_objectname10'></div>
+	<div id='results_objectname10' style='z-index:1000;' onclick=''>
+		
+					<a  href="/boardgame/120677/terra-mystica"   >Terra Mystica</a>
+				
+							<span class='smallerfont dull'>(2012)</span>
+								
+	</div>
+</td>
+
+		
+		
+			<td id='CEcell_rating10' class='collection_rating ' align=center	>
+	<div id='status_rating10'></div>
+	<div id='results_rating10'>
+		<div style='background:#33cc99;' class='rating'>
+						<div class='ratingtext'>9</div>
+					 </div><div class='sf darkgray' >Nov&nbsp;2017</div>
+	</div>
+</td>	
+		
+			<td class='collection_bggrating' align='center'>
+			8.106		</td>
+	
+	
+		
+		
+
+		
+
+		
+
+		
+
+		
+
+   
+   
+		
+		
+		
+	
+		
+	
+		
+
+		
+
+														
+		
+			
+	</tr>
+
+					
+
+<tr id='row_40542149'>		
+						
+		
+		
+			<td id='CEcell_objectname11' 
+	class="collection_objectname 
+						"		
+
+	>
+	
+	<div id='status_objectname11'></div>
+	<div id='results_objectname11' style='z-index:1000;' onclick=''>
+		
+					<a  href="/boardgame/24181/imperial"   >Imperial</a>
+				
+							<span class='smallerfont dull'>(2006)</span>
+								
+	</div>
+</td>
+
+		
+		
+			<td id='CEcell_rating11' class='collection_rating ' align=center	>
+	<div id='status_rating11'></div>
+	<div id='results_rating11'>
+		<div style='background:#33cc99;' class='rating'>
+						<div class='ratingtext'>9</div>
+					 </div><div class='sf darkgray' >Mar&nbsp;2018</div>
+	</div>
+</td>	
+		
+			<td class='collection_bggrating' align='center'>
+			7.334		</td>
+	
+	
+		
+		
+
+		
+
+		
+
+		
+
+		
+
+   
+   
+		
+		
+		
+	
+		
+	
+		
+
+		
+
+														
+		
+			
+	</tr>
+
+					
+
+<tr id='row_32451107'>		
+						
+		
+		
+			<td id='CEcell_objectname12' 
+	class="collection_objectname 
+						"		
+
+	>
+	
+	<div id='status_objectname12'></div>
+	<div id='results_objectname12' style='z-index:1000;' onclick=''>
+		
+					<a  href="/boardgame/163166/one-night-ultimate-werewolf-daybreak"   >One Night Ultimate Werewolf Daybreak</a>
+				
+							<span class='smallerfont dull'>(2015)</span>
+								
+	</div>
+</td>
+
+		
+		
+			<td id='CEcell_rating12' class='collection_rating ' align=center	>
+	<div id='status_rating12'></div>
+	<div id='results_rating12'>
+		<div style='background:#66ff99;' class='rating'>
+						<div class='ratingtext'>8.5</div>
+					 </div><div class='sf darkgray' >Jan&nbsp;2018</div>
+	</div>
+</td>	
+		
+			<td class='collection_bggrating' align='center'>
+			6.960		</td>
+	
+	
+		
+		
+
+		
+
+		
+
+		
+
+		
+
+   
+   
+		
+		
+		
+	
+		
+	
+		
+
+		
+
+														
+		
+			
+	</tr>
+
+					
+
+<tr id='row_35597732'>		
+						
+		
+		
+			<td id='CEcell_objectname13' 
+	class="collection_objectname 
+						"		
+
+	>
+	
+	<div id='status_objectname13'></div>
+	<div id='results_objectname13' style='z-index:1000;' onclick=''>
+		
+					<a  href="/boardgame/54043/jaipur"   >Jaipur</a>
+				
+							<span class='smallerfont dull'>(2009)</span>
+								
+	</div>
+</td>
+
+		
+		
+			<td id='CEcell_rating13' class='collection_rating ' align=center	>
+	<div id='status_rating13'></div>
+	<div id='results_rating13'>
+		<div style='background:#66ff99;' class='rating'>
+						<div class='ratingtext'>8.5</div>
+					 </div><div class='sf darkgray' >Aug&nbsp;2017</div>
+	</div>
+</td>	
+		
+			<td class='collection_bggrating' align='center'>
+			7.413		</td>
+	
+	
+		
+		
+
+		
+
+		
+
+		
+
+		
+
+   
+   
+		
+		
+		
+	
+		
+	
+		
+
+		
+
+														
+		
+			
+	</tr>
+
+					
+
+<tr id='row_37254932'>		
+						
+		
+		
+			<td id='CEcell_objectname14' 
+	class="collection_objectname 
+						"		
+
+	>
+	
+	<div id='status_objectname14'></div>
+	<div id='results_objectname14' style='z-index:1000;' onclick=''>
+		
+					<a  href="/boardgame/140934/arboretum"   >Arboretum</a>
+				
+							<span class='smallerfont dull'>(2015)</span>
+								
+	</div>
+</td>
+
+		
+		
+			<td id='CEcell_rating14' class='collection_rating ' align=center	>
+	<div id='status_rating14'></div>
+	<div id='results_rating14'>
+		<div style='background:#66ff99;' class='rating'>
+						<div class='ratingtext'>8.5</div>
+					 </div><div class='sf darkgray' >Nov&nbsp;2017</div>
+	</div>
+</td>	
+		
+			<td class='collection_bggrating' align='center'>
+			6.985		</td>
+	
+	
+		
+		
+
+		
+
+		
+
+		
+
+		
+
+   
+   
+		
+		
+		
+	
+		
+	
+		
+
+		
+
+														
+		
+			
+	</tr>
+
+					
+
+<tr id='row_40398078'>		
+						
+		
+		
+			<td id='CEcell_objectname15' 
+	class="collection_objectname 
+						"		
+
+	>
+	
+	<div id='status_objectname15'></div>
+	<div id='results_objectname15' style='z-index:1000;' onclick=''>
+		
+					<a  href="/boardgame/175640/vinhos-deluxe-edition"   >Vinhos Deluxe Edition</a>
+				
+							<span class='smallerfont dull'>(2016)</span>
+								
+	</div>
+</td>
+
+		
+		
+			<td id='CEcell_rating15' class='collection_rating ' align=center	>
+	<div id='status_rating15'></div>
+	<div id='results_rating15'>
+		<div style='background:#66ff99;' class='rating'>
+						<div class='ratingtext'>8.3</div>
+					 </div><div class='sf darkgray' >Jan&nbsp;2018</div>
+	</div>
+</td>	
+		
+			<td class='collection_bggrating' align='center'>
+			7.207		</td>
+	
+	
+		
+		
+
+		
+
+		
+
+		
+
+		
+
+   
+   
+		
+		
+		
+	
+		
+	
+		
+
+		
+
+														
+		
+			
+	</tr>
+
+					
+
+<tr id='row_40398088'>		
+						
+		
+		
+			<td id='CEcell_objectname16' 
+	class="collection_objectname 
+						"		
+
+	>
+	
+	<div id='status_objectname16'></div>
+	<div id='results_objectname16' style='z-index:1000;' onclick=''>
+		
+					<a  href="/boardgame/125153/gallerist"   >The Gallerist</a>
+				
+							<span class='smallerfont dull'>(2015)</span>
+								
+	</div>
+</td>
+
+		
+		
+			<td id='CEcell_rating16' class='collection_rating ' align=center	>
+	<div id='status_rating16'></div>
+	<div id='results_rating16'>
+		<div style='background:#66ff99;' class='rating'>
+						<div class='ratingtext'>8.3</div>
+					 </div><div class='sf darkgray' >Nov&nbsp;2017</div>
+	</div>
+</td>	
+		
+			<td class='collection_bggrating' align='center'>
+			7.572		</td>
+	
+	
+		
+		
+
+		
+
+		
+
+		
+
+		
+
+   
+   
+		
+		
+		
+	
+		
+	
+		
+
+		
+
+														
+		
+			
+	</tr>
+
+					
+
+<tr id='row_50007006'>		
+						
+		
+		
+			<td id='CEcell_objectname17' 
+	class="collection_objectname 
+						"		
+
+	>
+	
+	<div id='status_objectname17'></div>
+	<div id='results_objectname17' style='z-index:1000;' onclick=''>
+		
+					<a  href="/boardgame/159508/aquasphere"   >AquaSphere</a>
+				
+							<span class='smallerfont dull'>(2014)</span>
+								
+	</div>
+</td>
+
+		
+		
+			<td id='CEcell_rating17' class='collection_rating ' align=center	>
+	<div id='status_rating17'></div>
+	<div id='results_rating17'>
+		<div style='background:#66ff99;' class='rating'>
+						<div class='ratingtext'>8.3</div>
+					 </div><div class='sf darkgray' >Mar&nbsp;2018</div>
+	</div>
+</td>	
+		
+			<td class='collection_bggrating' align='center'>
+			6.994		</td>
+	
+	
+		
+		
+
+		
+
+		
+
+		
+
+		
+
+   
+   
+		
+		
+		
+	
+		
+	
+		
+
+		
+
+														
+		
+			
+	</tr>
+
+					
+
+<tr id='row_32451174'>		
+						
+		
+		
+			<td id='CEcell_objectname18' 
+	class="collection_objectname 
+						"		
+
+	>
+	
+	<div id='status_objectname18'></div>
+	<div id='results_objectname18' style='z-index:1000;' onclick=''>
+		
+					<a  href="/boardgame/161936/pandemic-legacy-season-1"   >Pandemic Legacy: Season 1</a>
+				
+							<span class='smallerfont dull'>(2015)</span>
+								
+	</div>
+</td>
+
+		
+		
+			<td id='CEcell_rating18' class='collection_rating ' align=center	>
+	<div id='status_rating18'></div>
+	<div id='results_rating18'>
+		<div style='background:#66ff99;' class='rating'>
+						<div class='ratingtext'>8.2</div>
+					 </div><div class='sf darkgray' >Mar&nbsp;2018</div>
+	</div>
+</td>	
+		
+			<td class='collection_bggrating' align='center'>
+			8.502		</td>
+	
+	
+		
+		
+
+		
+
+		
+
+		
+
+		
+
+   
+   
+		
+		
+		
+	
+		
+	
+		
+
+		
+
+														
+		
+			
+	</tr>
+
+					
+
+<tr id='row_32451071'>		
+						
+		
+		
+			<td id='CEcell_objectname19' 
+	class="collection_objectname 
+						"		
+
+	>
+	
+	<div id='status_objectname19'></div>
+	<div id='results_objectname19' style='z-index:1000;' onclick=''>
+		
+					<a  href="/boardgame/147949/one-night-ultimate-werewolf"   >One Night Ultimate Werewolf</a>
+				
+							<span class='smallerfont dull'>(2014)</span>
+								
+	</div>
+</td>
+
+		
+		
+			<td id='CEcell_rating19' class='collection_rating ' align=center	>
+	<div id='status_rating19'></div>
+	<div id='results_rating19'>
+		<div style='background:#66ff99;' class='rating'>
+						<div class='ratingtext'>8</div>
+					 </div><div class='sf darkgray' >Jun&nbsp;2016</div>
+	</div>
+</td>	
+		
+			<td class='collection_bggrating' align='center'>
+			7.107		</td>
+	
+	
+		
+		
+
+		
+
+		
+
+		
+
+		
+
+   
+   
+		
+		
+		
+	
+		
+	
+		
+
+		
+
+														
+		
+			
+	</tr>
+
+					
+
+<tr id='row_40191734'>		
+						
+		
+		
+			<td id='CEcell_objectname20' 
+	class="collection_objectname 
+						"		
+
+	>
+	
+	<div id='status_objectname20'></div>
+	<div id='results_objectname20' style='z-index:1000;' onclick=''>
+		
+					<a  href="/boardgame/27833/steam"   >Steam</a>
+				
+							<span class='smallerfont dull'>(2009)</span>
+								
+	</div>
+</td>
+
+		
+		
+			<td id='CEcell_rating20' class='collection_rating ' align=center	>
+	<div id='status_rating20'></div>
+	<div id='results_rating20'>
+		<div style='background:#66ff99;' class='rating'>
+						<div class='ratingtext'>8</div>
+					 </div><div class='sf darkgray' >Nov&nbsp;2017</div>
+	</div>
+</td>	
+		
+			<td class='collection_bggrating' align='center'>
+			7.404		</td>
+	
+	
+		
+		
+
+		
+
+		
+
+		
+
+		
+
+   
+   
+		
+		
+		
+	
+		
+	
+		
+
+		
+
+														
+		
+			
+	</tr>
+
+		
+
+	</table>
+
+	<div class='geekcollection_pager'>
+	<span class='geekpages'>
+		1 to 20 of 20&nbsp;&nbsp;
+	
+			
+		Page 1.
+	
+			
+		<a href="javascript://" onclick="CE_SetPage( 1 );">1</a>
+	</span>
+	
+	<form autocomplete=off  id='form_pager_bottom' 
+	      style='display:inline;' 
+	      onsubmit="CE_SetPage( $('pageset').value ); return false;">
+		<input class='geekinput' type='text' name='pageset' id='pageset_bottom' size=4>
+		<input class='geekinput' type='submit' autocomplete="OFF" value='Go &gt;' onclick="CE_PageJump( $('pageset_bottom').value ); return false;">
+	</form>		
+</div>
+</div>
+</div>
+								</div>
+							</td>	
+								
+													</tr>
+					</table>
+				</td>
+			</tr>
+		</table>
+	</div>
+	
+	<table width='100%' align='center' style='margin-top:20px;'>
+		<tr>
+			<td align='center'></td>
+		</tr>
+		<tr>
+			<td align='center'>
+				<table>
+					<tr>
+						<td class='sf' align='center' valign='middle' colspan=3>
+							<a href="/">Front Page</a>
+							| <a href="/wiki/page/Welcome_to_BoardGameGeek">Welcome</a>
+							| <a href="/contact">Contact</a>							
+							| <a href="/privacy">Privacy Policy</a>
+							| <a href="/terms">Terms of Service</a>							
+							| <a href="/geekads/buy">Advertise</a>
+							| <a href="/support">Support BGG</a>							
+							| <a href="/recentadditions">Feeds</a>
+							<a href="/recentadditions"><img class='icon i_silk_feed' title='' alt='RSS' style=''  src='data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==' /></a>
+							<div class='smallerfont' style='margin-bottom:1em;'>
+								Geekdo, BoardGameGeek, the Geekdo logo, and the BoardGameGeek logo are trademarks of BoardGameGeek, LLC.
+							</div>
+
+							<div>
+								
+							</div>
+							
+						</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+	</table>
+</div>
+
+<a href="/geekbay/block"></a>
+
+<script>
+	angular.bootstrap( document, ['geekmodule'] );
+</script>
+
+<script>
+	(function ( i, s, o, g, r, a, m ) {
+		i['GoogleAnalyticsObject']=r; i[r]=i[r] || function()
+		{
+			(i[r].q = i[r].q || []).push( arguments )
+		}, i[r].l = 1 * new Date();
+		a = s.createElement( o ), m = s.getElementsByTagName( o )[0];
+		a.async = 1;
+		a.src = g;
+		m.parentNode.insertBefore( a, m )
+	} )
+	(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+	ga( 'create', 'UA-104725-1', 'auto' );
+	ga( 'require', 'displayfeatures' );
+	ga( 'set', 'dimension1', 'GeekUI' );
+	ga( 'send', 'pageview' );
+</script>
+
+
+
+
+<div id='geekextjs'></div>
+</body>
+</html>

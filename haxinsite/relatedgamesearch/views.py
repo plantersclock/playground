@@ -39,7 +39,7 @@ def get_favorite_game_name(request):
             # process the data in form.cleaned_data as required
             # ...
             # redirect to a new URL:
-            return render(request, 'relatedgamesearch/favoritegame.html', {'form': form, 'favgamename': otherfavgames})
+            return render(request, 'relatedgamesearch/favoritegame.html', {'form': form, 'otherfavgames': otherfavgames})
 
     # if a GET (or any other method) we'll create a blank form
     else:
