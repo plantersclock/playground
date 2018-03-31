@@ -93,11 +93,9 @@ def top10scrubber(username, url):
             gamerating = float(gamerating)
             
 
-            if gamerating < 8:
-                break
             if count == 10:
                 game10rank = gamerating
-            if count >= 10 and gamerating != game10rank:
+            if (count >= 10 and gamerating != game10rank) or gamerating < 8:
                 break
 
             count += 1
@@ -133,7 +131,7 @@ rgsuserlist = db.fetchall()
 count = 0
 for x in rgsuserlist:
     if count == 50:
-        time.sleep(5)
+        time.sleep(.1)
         count = 0
     rgsuser = x[0]
     db.execute("SELECT id FROM relatedgamesearch_bgguser WHERE name = '{0}'".format(rgsuser))
@@ -163,7 +161,7 @@ for x in rgsuserlist:
 # Adds Recently active users on BGG recent forum
 ##################################################################
 # count = 0
-# while count <= 10:
+# while count <= 5:
 #     try:
 #         page = urllib.request.urlopen('https://boardgamegeek.com/forum/19/boardgamegeek/general-gaming/page/{0}'.format(count))
 #         forumcontent = page.read()

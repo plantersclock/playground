@@ -30,7 +30,7 @@ def get_favorite_game_name(request):
         if form.is_valid():
             favgamename = form.cleaned_data['favorite_game_name']
             favgameuserlist = []
-            favgameuserlist = UserGameRanking.objects.filter(game_name__name = favgamename)
+            favgameuserlist = UserGameRanking.objects.filter(game_name__name__contains = favgamename)
             favgameuserlist = [p.user_name.name for p in favgameuserlist]
             print(favgameuserlist)
             otherfavgames = [x.game_name.name for x in UserGameRanking.objects.filter(user_name__name__in = favgameuserlist)]
