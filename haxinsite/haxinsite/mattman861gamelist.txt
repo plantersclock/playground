@@ -302,7 +302,7 @@ window.onload = start;
 					Database 
 									</div>
 				<ul>
-											<li><a href="/browse/boardgame">Games&nbsp;(97777)</a></li>											<li><a href="/browse/boardgamefamily">Families&nbsp;(2767)</a></li>											<li><a href="/browse/boardgamecategory">Categories&nbsp;(84)</a></li>											<li><a href="/browse/boardgamemechanic">Mechanics&nbsp;(51)</a></li>											<li><a href="/browse/boardgameartist">Artists&nbsp;(17140)</a></li>											<li><a href="/browse/boardgamedesigner">Designers&nbsp;(26356)</a></li>											<li><a href="/browse/boardgamepublisher">Publishers&nbsp;(18268)</a></li>											<li><a href="/browse/boardgameaccessory">Accessories&nbsp;(1594)</a></li>											<li><a href="/browse/boardgamehonor">Honors&nbsp;(3076)</a></li>										<li><a href="/boardgame/random">Random Game</a></li>
+											<li><a href="/browse/boardgame">Games&nbsp;(97788)</a></li>											<li><a href="/browse/boardgamefamily">Families&nbsp;(2767)</a></li>											<li><a href="/browse/boardgamecategory">Categories&nbsp;(84)</a></li>											<li><a href="/browse/boardgamemechanic">Mechanics&nbsp;(51)</a></li>											<li><a href="/browse/boardgameartist">Artists&nbsp;(17142)</a></li>											<li><a href="/browse/boardgamedesigner">Designers&nbsp;(26360)</a></li>											<li><a href="/browse/boardgamepublisher">Publishers&nbsp;(18268)</a></li>											<li><a href="/browse/boardgameaccessory">Accessories&nbsp;(1594)</a></li>											<li><a href="/browse/boardgamehonor">Honors&nbsp;(3076)</a></li>										<li><a href="/boardgame/random">Random Game</a></li>
 					<li><a href='/gonecardboard'>Gone Cardboard</a></li>
 				</ul>
 				<div class='clear'></div>
@@ -1771,7 +1771,7 @@ function AssignGeekRanks( el )
 </td>	
 		
 			<td class='collection_bggrating' align='center'>
-			7.897		</td>
+			7.901		</td>
 	
 	
 		
@@ -1901,7 +1901,7 @@ function AssignGeekRanks( el )
 </td>	
 		
 			<td class='collection_bggrating' align='center'>
-			8.106		</td>
+			8.105		</td>
 	
 	
 		
@@ -2031,7 +2031,7 @@ function AssignGeekRanks( el )
 </td>	
 		
 			<td class='collection_bggrating' align='center'>
-			6.960		</td>
+			6.959		</td>
 	
 	
 		
@@ -2161,7 +2161,7 @@ function AssignGeekRanks( el )
 </td>	
 		
 			<td class='collection_bggrating' align='center'>
-			6.985		</td>
+			6.986		</td>
 	
 	
 		
@@ -2291,7 +2291,7 @@ function AssignGeekRanks( el )
 </td>	
 		
 			<td class='collection_bggrating' align='center'>
-			7.572		</td>
+			7.573		</td>
 	
 	
 		
@@ -2551,7 +2551,7 @@ function AssignGeekRanks( el )
 </td>	
 		
 			<td class='collection_bggrating' align='center'>
-			7.404		</td>
+			7.405		</td>
 	
 	
 		

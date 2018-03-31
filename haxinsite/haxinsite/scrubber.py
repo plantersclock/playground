@@ -8,40 +8,51 @@ import re
 
 forumurl = 'https://boardgamegeek.com/thread/browse/region/1?sort=recent'
 top10url = "https://boardgamegeek.com/collection/user/mattman861?sort=rating&sortdir=desc&rankobjecttype=subtype&rankobjectid=1&columns=title%7Crating%7Cbggrating&minrating=8&geekranks=%0A%09%09%09%09%09%09%09%09%09Board+Game+Rank%0A%09%09%09%09%09%09%09%09&excludesubtype=boardgameexpansion&objecttype=thing&ff=1&subtype=boardgame"
-####################################################################
-# Go to top10url and save text into the file mattman861gamelist.txt
+top10url2 = "https://boardgamegeek.com/collection/user/mattman861?sort=rating&sortdir=desc&rankobjecttype=subtype&rankobjectid=1&columns=title%7Crating&minrating=8.5&geekranks=Board+Game+Rank&excludesubtype=boardgameexpansion&objecttype=thing&ff=1&subtype=boardgame"
 
 conn = sqlite3.connect('/HaxinAlone/haxinsite/db.sqlite3')
 db = conn.cursor()
 db.execute("INSERT INTO relatedgamesearch_bgguser(name) SELECT ('{0}') WHERE NOT EXISTS(SELECT 1 FROM relatedgamesearch_bgguser WHERE name = ('{0}'));".format('rahdo'))
 conn.commit()
 
-db.execute("SELECT id FROM relatedgamesearch_bgguser WHERE name = '{0}'".format('mattman861'))
-bgguserid = db.fetchall()[0][0]
-print(bgguserid)
-db.execute("SELECT id FROM relatedgamesearch_bgggame WHERE name = '{0}'".format('Terra Mystica'))
-bgggameid = db.fetchall()[0][0]
-print(bgggameid)
+####################################################################
+# Gets the FK references PK ID's to be used later in usergamerating record creation
+####################################################################
+# db.execute("SELECT id FROM relatedgamesearch_bgguser WHERE name = '{0}'".format('mattman861'))
+# bgguserid = db.fetchall()[0][0]
+# print(bgguserid)
+# db.execute("SELECT id FROM relatedgamesearch_bgggame WHERE name = '{0}'".format('Terra Mystica'))
+# bgggameid = db.fetchall()[0][0]
+# print(bgggameid)
 
-db.execute("INSERT OR IGNORE INTO relatedgamesearch_usergameranking(user_name_id, game_name_id, rating) SELECT '%(bgguserid)s', '%(bgggameid)s', '%(rating)s'WHERE NOT EXISTS(SELECT 1 FROM relatedgamesearch_usergameranking WHERE user_name_id = ('%(bgguserid)s') AND game_name_id = ('%(bgggameid)s'));" % {'bgguserid' : bgguserid , 'bgggameid' : bgggameid , 'rating' : "10"})
-test = db.fetchall()
-print(test)
+# name = 'myboardgamename'
+# db.execute("INSERT OR IGNORE INTO relatedgamesearch_bgggame(name) SELECT '%(name)s' WHERE NOT EXISTS(SELECT 1 FROM relatedgamesearch_bgggame WHERE name = ('%(name)s'));" % {'name' : name})
+# bgggamename = db.fetchall()
+# print(bgggamename)
 
-db.execute("UPDATE relatedgamesearch_usergameranking SET rating = '%(rating)s' WHERE user_name_id = ('%(bgguserid)s') AND game_name_id = ('%(bgggameid)s');" % {'bgguserid' : bgguserid , 'bgggameid' : bgggameid , 'rating' : "9"})
-test = db.fetchall()
-print(test)
+# db.execute("INSERT OR IGNORE INTO relatedgamesearch_usergameranking(user_name_id, game_name_id, rating) SELECT '%(bgguserid)s', '%(bgggameid)s', '%(rating)s'WHERE NOT EXISTS(SELECT 1 FROM relatedgamesearch_usergameranking WHERE user_name_id = ('%(bgguserid)s') AND game_name_id = ('%(bgggameid)s'));" % {'bgguserid' : bgguserid , 'bgggameid' : bgggameid , 'rating' : "10"})
+# test = db.fetchall()
+# print(test)
 
-#db.execute("UPDATE relatedgamesearch_usergameranking SET rating = '{2}' WHERE user_name = '(SELECT id FROM relatedgamesearch_bgggame WHERE name = {0})' AND game_name = '(SELECT id FROM relatedgamesearch_bgguser WHERE name = {1})';".format('mattman861', 'Terra Mystica', '9.99'))
-conn.commit()
+#####################################################################
+# Updates Game Ratings for existing User/Game Combos
+#####################################################################
+# db.execute("UPDATE relatedgamesearch_usergameranking SET rating = '%(rating)s' WHERE user_name_id = ('%(bgguserid)s') AND game_name_id = ('%(bgggameid)s');" % {'bgguserid' : bgguserid , 'bgggameid' : bgggameid , 'rating' : "9"})
+# test = db.fetchall()
+# print(test)
 
+#####################################################################
+# Go to top10url and save text into the file mattman861gamelist.txt
+#####################################################################
 # page = urllib.request.urlopen(top10url)
 # content = page.read()
+
 # Go to top10url and save text into the file mattman861gamelist.txt
 # mattstop10file = open("mattman861gamelist.txt", "wb")
 # mattstop10file.write(content)
 # mattstop10file.close()
 
-top10urltext = open("mattman861gamelist.txt", "r")
+
 #####################################################################
 # Go to top10url and save text into the file mattman861gamelist.txt
 
@@ -51,7 +62,7 @@ top10urltext = open("mattman861gamelist.txt", "r")
 # forumpage.write(content)
 # forumpage.close()
 
-forumpagetext = open("forumpage.txt", "r")
+
 
 def userscrubber(url):
     soup = BeautifulSoup(url, "html.parser")
@@ -65,38 +76,81 @@ def userscrubber(url):
         # print (users)
         
 
-def top10scrubber(url):
+def top10scrubber(username, url):
     gamesoup = BeautifulSoup(url, "html.parser")
     count = 1
     
-    while True:
-
-        gamenameid = ('results_objectname%d' %(count))
-        gamename = (gamesoup.find(id=gamenameid)).find('a').get_text()
-
-        gamerankid = ('results_rating%d' %(count))
-        gamerank = (gamesoup.find(id=gamerankid)).find(class_='ratingtext').get_text()
-        gamerank = float(gamerank)
-
-        if gamerank < 8:
-            break
-        if count == 10:
-            game10rank = gamerank
-        if count >= 10 and gamerank != game10rank:
-            break
-
-        count += 1
-
-    #     print('------------------------------------------------')
-    #     print(gamename)
-    #     print(gamerank)
-    # print('------------------------------------------------')
-
     
+    while True:
+        try:
+            gamenameid = ('results_objectname%d' %(count))
+            gamename = (gamesoup.find(id=gamenameid)).find('a').get_text()
+            
 
-top10scrubber(top10urltext)
-top10urltext.close()
+            gamerankid = ('results_rating%d' %(count))
+            gamerating = (gamesoup.find(id=gamerankid)).find(class_='ratingtext').get_text()
+            gamerating = float(gamerating)
+            
 
-userscrubber(forumpagetext)
+            if gamerating < 8:
+                break
+            if count == 10:
+                game10rank = gamerating
+            if count >= 10 and gamerating != game10rank:
+                break
+
+            count += 1
+            try:
+                db.execute("SELECT id FROM relatedgamesearch_bgguser WHERE name = '{0}'".format(username))
+                bgguserid = db.fetchall()[0][0]
+                # print(bgguserid)
+
+                db.execute("INSERT OR IGNORE INTO relatedgamesearch_bgggame(name) SELECT '%(name)s' WHERE NOT EXISTS(SELECT 1 FROM relatedgamesearch_bgggame WHERE name = ('%(name)s'));" % {'name' : gamename})
+                db.execute("SELECT id FROM relatedgamesearch_bgggame WHERE name = '{0}'".format(gamename))
+                bgggameid = db.fetchall()[0][0]
+                # print(bgggameid)
+                
+                
+
+                db.execute("INSERT OR IGNORE INTO relatedgamesearch_usergameranking(user_name_id, game_name_id, rating) SELECT '%(bgguserid)s', '%(bgggameid)s', '%(rating)s'WHERE NOT EXISTS(SELECT 1 FROM relatedgamesearch_usergameranking WHERE user_name_id = ('%(bgguserid)s') AND game_name_id = ('%(bgggameid)s'));" % {'bgguserid' : bgguserid , 'bgggameid' : bgggameid , 'rating' : gamerating})
+            except:
+                pass
+
+        #     print('------------------------------------------------')
+            print("{0}'s game #{1}: {2}".format(username, count-1, gamename))
+            
+        except:
+            break
+
+    print("------------------------------------------------")
+
+
+db.execute("SELECT name FROM relatedgamesearch_bgguser")
+rgsuserlist = db.fetchall()
+count = 0
+for x in rgsuserlist:
+    rgsuser = x[0]
+    print (rgsuser)
+    try:
+        usertop10url = ("https://boardgamegeek.com/collection/user/{0}?sort=rating&sortdir=desc&rankobjecttype=subtype&rankobjectid=1&columns=title%7Crating%7Cbggrating&minrating=8&geekranks=%0A%09%09%09%09%09%09%09%09%09Board+Game+Rank%0A%09%09%09%09%09%09%09%09&excludesubtype=boardgameexpansion&objecttype=thing&ff=1&subtype=boardgame".format(rgsuser))
+        page = urllib.request.urlopen(usertop10url)
+        usertop10content = page.read()
+        top10scrubber(rgsuser, usertop10content)
+    except:
+        continue
+    
+    conn.commit()
+
+
+
+
+
+# top10urltext = open("mattman861gamelist.txt", "r")
+# top10scrubber('mattman861', top10urltext)
+# top10urltext.close()
+
+# forumpagetext = open("forumpage.txt", "r")
+# userscrubber(forumpagetext)
+# forumpagetext.close()
+
 conn.close()
-forumpagetext.close()
