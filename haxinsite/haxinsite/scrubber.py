@@ -2,6 +2,8 @@ from bs4 import BeautifulSoup
 
 import sqlite3
 
+import time
+
 import requests
 import urllib.request
 import re
@@ -12,8 +14,6 @@ top10url2 = "https://boardgamegeek.com/collection/user/mattman861?sort=rating&so
 
 conn = sqlite3.connect('/HaxinAlone/haxinsite/db.sqlite3')
 db = conn.cursor()
-db.execute("INSERT INTO relatedgamesearch_bgguser(name) SELECT ('{0}') WHERE NOT EXISTS(SELECT 1 FROM relatedgamesearch_bgguser WHERE name = ('{0}'));".format('rahdo'))
-conn.commit()
 
 ####################################################################
 # Gets the FK references PK ID's to be used later in usergamerating record creation
@@ -85,6 +85,7 @@ def top10scrubber(username, url):
         try:
             gamenameid = ('results_objectname%d' %(count))
             gamename = (gamesoup.find(id=gamenameid)).find('a').get_text()
+            gamename = re.sub("[\(\[].*?[\)\]]", "", gamename)
             
 
             gamerankid = ('results_rating%d' %(count))
@@ -123,34 +124,71 @@ def top10scrubber(username, url):
             break
 
     print("------------------------------------------------")
-
-
+#####################################################################################################################################
+##################################################################
+# Runs the Top 10 gamme scrubber on the user list
+##################################################################
 db.execute("SELECT name FROM relatedgamesearch_bgguser")
 rgsuserlist = db.fetchall()
 count = 0
 for x in rgsuserlist:
+    if count == 50:
+        time.sleep(5)
+        count = 0
     rgsuser = x[0]
-    print (rgsuser)
-    try:
-        usertop10url = ("https://boardgamegeek.com/collection/user/{0}?sort=rating&sortdir=desc&rankobjecttype=subtype&rankobjectid=1&columns=title%7Crating%7Cbggrating&minrating=8&geekranks=%0A%09%09%09%09%09%09%09%09%09Board+Game+Rank%0A%09%09%09%09%09%09%09%09&excludesubtype=boardgameexpansion&objecttype=thing&ff=1&subtype=boardgame".format(rgsuser))
-        page = urllib.request.urlopen(usertop10url)
-        usertop10content = page.read()
-        top10scrubber(rgsuser, usertop10content)
-    except:
-        continue
-    
+    db.execute("SELECT id FROM relatedgamesearch_bgguser WHERE name = '{0}'".format(rgsuser))
+    userid = db.fetchall()[0][0]
+    db.execute("SELECT rating FROM relatedgamesearch_usergameranking WHERE user_name_id = '{0}'".format(userid))
+    completeduser = db.fetchall()
+    print("------------------------------------------------")
+    print ("{0}:  {1}".format(rgsuser, completeduser))
+    if(len(completeduser) == 0):
+        try:
+            usertop10url = ("https://boardgamegeek.com/collection/user/{0}?sort=rating&sortdir=desc&rankobjecttype=subtype&rankobjectid=1&columns=title%7Crating%7Cbggrating&minrating=8&geekranks=%0A%09%09%09%09%09%09%09%09%09Board+Game+Rank%0A%09%09%09%09%09%09%09%09&excludesubtype=boardgameexpansion&objecttype=thing&ff=1&subtype=boardgame".format(rgsuser))
+            page = urllib.request.urlopen(usertop10url)
+            usertop10content = page.read()
+            top10scrubber(rgsuser, usertop10content)
+        except:
+            continue
+
+    db.execute("SELECT rating FROM relatedgamesearch_usergameranking WHERE user_name_id = '{0}'".format(userid))
+    completeduser = db.fetchall()
+    if (len(completeduser) == 0):
+        db.execute("DELETE FROM relatedgamesearch_bgguser WHERE name = '{0}'".format(rgsuser))
     conn.commit()
+    count += 1
+    
 
+##################################################################
+# Adds Recently active users on BGG recent forum
+##################################################################
+# count = 0
+# while count <= 10:
+#     try:
+#         page = urllib.request.urlopen('https://boardgamegeek.com/forum/19/boardgamegeek/general-gaming/page/{0}'.format(count))
+#         forumcontent = page.read()
+#         userscrubber(forumcontent)
+#     except:
+#         continue
+#     count += 1
 
+#######################################################################################################################################
 
-
-
+##################################################################
+# Scrubs the top 10 game mattman861 text file page .txt file
+##################################################################
 # top10urltext = open("mattman861gamelist.txt", "r")
 # top10scrubber('mattman861', top10urltext)
 # top10urltext.close()
+##################################################################
 
+##################################################################
+# Scrubs the forum page .txt file
+##################################################################
 # forumpagetext = open("forumpage.txt", "r")
 # userscrubber(forumpagetext)
 # forumpagetext.close()
+##################################################################
 
+conn.commit()
 conn.close()
